@@ -9,43 +9,35 @@ This project focuses on predicting the salaries of Major League Baseball (MLB) p
 
 The project was developed as part of the COMP 333: Data Analytics course at Concordia University.
 
-📊 Datasets Used
+📊 Datasets Used:
+
 We collected and integrated data from three different sources:
 
-MLB 2023 Salaries & Contracts
-USA Today Salary Data
+—MLB 2023 Salaries & Contracts
+—USA Today Salary Data
+—2023 Exit Velocity Statistics
+—Statcast Leaderboard
+—2023 Player Stats
+—Rotowire MLB Stats
 
-2023 Exit Velocity Statistics
-Statcast Leaderboard
+🛠️ Data Cleaning & Integration:
 
-2023 Player Stats
-Rotowire MLB Stats
-
-🛠️ Data Cleaning & Integration
 We performed extensive preprocessing, including:
 
-Standardizing player names across datasets to merge using first and last names.
+—Standardizing player names across datasets to merge using first and last names.
+—Handling null values using context-aware strategies:
+—Fill with mean values
+—Replace with league minimums
+—Drop records without sufficient data
+—Combining duplicates by aggregating stats or keeping top contract entries.
+—Normalization and encoding using MinMaxScaler and one-hot encoding.
 
-Handling null values using context-aware strategies:
+📉 Outlier Detection:
 
-Fill with mean values
-
-Replace with league minimums
-
-Drop records without sufficient data
-
-Combining duplicates by aggregating stats or keeping top contract entries.
-
-Normalization and encoding using MinMaxScaler and one-hot encoding.
-
-📉 Outlier Detection
-We applied multiple outlier detection methods to improve data quality:
-
-Z-Score Analysis
-
-IQR (Interquartile Range) Method
-
-DBSCAN Clustering
+—We applied multiple outlier detection methods to improve data quality:
+—Z-Score Analysis
+—IQR (Interquartile Range) Method
+—DBSCAN Clustering
 
 Only players that passed all three filters were used for model training.
 
