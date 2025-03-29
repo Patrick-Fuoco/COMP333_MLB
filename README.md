@@ -1,4 +1,4 @@
-*🧢 MLB Player Salary Prediction (2023)*
+# 🧢 MLB Player Salary Prediction (2023)
 
 
 📌 Project Overview
@@ -21,17 +21,36 @@ We collected and integrated data from three different sources:
 🛠️ Data Cleaning & Integration
 We performed extensive preprocessing, including:
 
-Standardizing player names across datasets to merge using first and last names.
+—Standardizing player names across datasets to merge using first and last names. <br>
+—Handling null values using context-aware strategies <br>
+—Fill with mean values <br>
+—Replace with league minimums  <br>
+—Drop records without sufficient data  <br>
+—Combining duplicates by aggregating stats or keeping top contract entries.  <br>
+—Normalization and encoding using MinMaxScaler and one-hot encoding.  <br>
 
-Handling null values using context-aware strategies:
 
-Fill with mean values
+📉 Outlier Detection
+We applied multiple outlier detection methods to improve data quality:
 
-Replace with league minimums
+—Z-Score Analysis  <br>
+—IQR (Interquartile Range) Method <br>
+—DBSCAN Clustering <br>
 
-Drop records without sufficient data
+Only players that passed all three filters were used for model training.
 
-Combining duplicates by aggregating stats or keeping top contract entries.
+📈 Key Features
 
-Normalization and encoding using MinMaxScaler and one-hot encoding.
+—Robust data pipeline for cleaning and merging multiple real-world datasets. <br>
+—Insightful visual analytics to assess data distributions and correlations. <br>
+—Comparison between cleaned vs. raw data to highlight impact of preprocessing. <br>
+—Use of Google Colab for reproducible and collaborative research. <br>
+
+
+📦 Technologies Used
+
+—Python (Pandas, NumPy, scikit-learn, Matplotlib, Seaborn) <br>
+—Google Colab + Google Drive <br>
+—ML models: Linear, Polynomial, Decision Tree <br>
+—Data Cleaning: Unidecode, regex, aggregation functions <br>
 
