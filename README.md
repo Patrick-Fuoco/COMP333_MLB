@@ -9,15 +9,20 @@ This project focuses on predicting the salaries of Major League Baseball (MLB) p
 
 The project was developed as part of the COMP 333: Data Analytics course at Concordia University.
 
-📊 Datasets Used:
+📊 Datasets Used
 
 We collected and integrated data from three different sources:
 
 —MLB 2023 Salaries & Contracts
+
 —USA Today Salary Data
+
 —2023 Exit Velocity Statistics
+
 —Statcast Leaderboard
+
 —2023 Player Stats
+
 —Rotowire MLB Stats
 
 🛠️ Data Cleaning & Integration:
