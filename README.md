@@ -1,4 +1,4 @@
-🧢 MLB Player Salary Prediction (2023)
+*🧢 MLB Player Salary Prediction (2023)*
 
 
 📌 Project Overview
